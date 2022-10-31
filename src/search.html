@@ -8,14 +8,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<div class="container-fluid p-5 bg-primary text-white text-center">
-  <h2>Choice Hotels</h2>
-  <p>Choice Hotels International, Inc. is an American multinational hospitality company based in      Rockville, Maryland. The company, which is one of the newest hotel chains in the world,owns      hotel brands ranging from upscale to economy.</p>
+<div class="container-fluid p-6 bg-black text-white text-center">
+  <h2>STAY</h2>
+  <h5><i>Build your best memories with us.</i></h5>
+  <p>Stay International, Inc. is an American multinational hospitality company based in      Rockville, Maryland. The company, which is one of the newest hotel chains in the world,owns      hotel brands ranging from upscale to economy.</p>
 </div>
   <form action="/action_page.php">
   <div class="container mt-5">
   <div class="row">
-  <div class="col-sm-4">
+  <div class="col-sm-3">
     <div class="form-floating mb-3 mt-3">
       <select class="form-select" id="city" name="citylist">
         <option>Select one</option>
@@ -27,14 +28,16 @@
       </select>
       <label for="city" class="form-label">Select Location:</label>
     </div>
-<div class="col-sm-4">
-   <p> Please enter the duration of your stay:</p>
-  	<label for="Check-in Date">Enter The Check-in Date:</label>
+</div>
+<div class="col-sm-2"><br>
+     	<label for="Check-in Date">Check-in:</label>
   	<input type="date" id="Check-in Date" name="Check-in Date" min="2022-10-01">
-  	<label for="Check-out Date">Enter The Check-out Date:</label>
+</div>
+<div class="col-sm-2"><br>
+  	<label for="Check-out Date">Check-out:</label>
   	<input type="date" id="Check-out Date" name="Check-out Date" max="2025-12-31">
 </div>
-  <div class="col-sm-4">
+  <div class="col-sm-3">
    <div class="form-floating mb-3 mt-3">
       <select class="form-select" id="guest" name="guestnumber">
         <option>Select one</option>
@@ -46,8 +49,11 @@
       </select>
       <label for="guest" class="form-label">Select the number of guests:</label>
     </div>
+    </div>
+    <div class="col-sm-2"><br>
     <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  </form></div>
+</div>
 </div>
 </div>
 </body>
